@@ -1,2 +1,2 @@
-require("john.core")
-require("john.lazy")
+require("john-nvim-config.core")
+require("john-nvim-config.lazy")

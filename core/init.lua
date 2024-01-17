@@ -1,2 +1,2 @@
-require("john.core.set")
-require("john.core.remap")
+require("john-nvim-config.core.set")
+require("john-nvim-config.core.remap")
