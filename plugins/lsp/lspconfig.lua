@@ -13,6 +13,9 @@ return {
 		local on_attach = function (client, bufnr)
 			opts.buffer = bufnr
 
+			opts.desc = "Show documentation for what is under cursor"
+			vim.keymap.set("n", "K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
+
 			opts.desc = "Show LSP references"
 			vim.keymap.set("n", "gr", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
 
@@ -27,9 +30,6 @@ return {
 
 			opts.desc = "Show LSP type definitions"
 			vim.keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts) -- show lsp type definitions
-
-			opts.desc = "Show documentation for what is under cursor"
-			vim.keymap.set("n", "K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
 		end
 
 		local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
