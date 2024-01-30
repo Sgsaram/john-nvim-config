@@ -23,6 +23,6 @@ return {
 				git_ignored = false,
 			},
 		})
-		vim.keymap.set("n", "<leader>fe", "<cmd>NvimTreeToggle<CR>") 
+		vim.keymap.set("n", "<leader>pe", "<cmd>NvimTreeToggle<CR>") 
 	end
 }

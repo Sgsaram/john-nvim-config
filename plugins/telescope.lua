@@ -19,7 +19,7 @@ return {
 				},
 			},
 		})
-		vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
-		vim.keymap.set("n", "<leader>fw", builtin.live_grep, {})
+		vim.keymap.set("n", "<leader>pf", builtin.find_files, {})
+		vim.keymap.set("n", "<leader>pw", builtin.live_grep, {})
 	end
 }
