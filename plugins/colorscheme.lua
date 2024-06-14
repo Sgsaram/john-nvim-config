@@ -8,6 +8,6 @@ return {
 			no_italic = true,
 		})
 
-		vim.cmd.colorscheme("catppuccin")
+		vim.cmd([[colorscheme catppuccin]])
 	end
 }
