@@ -1,25 +1,27 @@
 return {
-	"nvim-telescope/telescope.nvim", tag = "0.1.5",
-	lazy = false,
+	"nvim-telescope/telescope.nvim",
+	tag = "0.1.6",
 	dependencies = {
-		"nvim-lua/plenary.nvim"
+		"nvim-lua/plenary.nvim",
 	},
 	config = function()
-		local telescope = require("telescope")
 		local builtin = require("telescope.builtin")
+		local telescope = require("telescope")
 		local actions = require("telescope.actions")
 		telescope.setup({
 			defaults = {
 				path_display = { "truncate" },
 				mappings = {
 					i = {
-						["<C-k>"] = actions.move_selection_previous, -- move to prev result
-						["<C-j>"] = actions.move_selection_next, -- move to next result
+						["<C-k>"] = actions.move_selection_previous,
+						["<C-j>"] = actions.move_selection_next,
+						["<Esc>"] = actions.close,
 					},
 				},
 			},
 		})
-		vim.keymap.set("n", "<leader>pf", builtin.find_files, {})
-		vim.keymap.set("n", "<leader>pw", builtin.live_grep, {})
-	end
+		vim.keymap.set("n", "<leader>pf", builtin.find_files, {desc = "Telescope Find Files"})
+		vim.keymap.set("n", "<leader>pw", builtin.live_grep, {desc = "Telescope Live Grep"})
+        vim.keymap.set("n", "<leader>pt", "<cmd>TodoTelescope<cr>", {desc = "Telescope Find Todo"})
+	end,
 }

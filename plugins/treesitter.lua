@@ -1,10 +1,8 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
 	build = ":TSUpdate",
-	config = function () 
-		local configs = require("nvim-treesitter.configs")
-
-		configs.setup({
+	config = function()
+		require("nvim-treesitter.configs").setup({
 			ensure_installed = {
 				"python",
 				"requirements",
@@ -18,12 +16,11 @@ return {
 				"css",
 				"yaml",
 				"toml",
+				"elixir",
 			},
 			sync_install = false,
 			highlight = { enable = true },
-			indent = { enable = true }
+			indent = { enable = true },
 		})
-
-		vim.treesitter.language.register("css", "qss")
 	end
 }
