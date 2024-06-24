@@ -13,9 +13,9 @@ return {
 				path_display = { "truncate" },
 				mappings = {
 					i = {
-						["<C-k>"] = actions.move_selection_previous,
-						["<C-j>"] = actions.move_selection_next,
-						["<Esc>"] = actions.close,
+						["<c-k>"] = actions.move_selection_previous,
+						["<c-j>"] = actions.move_selection_next,
+						["<esc>"] = actions.close,
 					},
 				},
 			},
