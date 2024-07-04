@@ -23,6 +23,10 @@ return {
 				"pyright",
 				"clangd",
 				"marksman",
+                "html",
+                "cssls",
+                "tsserver",
+                "tailwindcss",
 			},
 		})
         local lsp_zero = require("lsp-zero")
@@ -61,6 +65,11 @@ return {
         lspconfig.pyright.setup({})
         lspconfig.clangd.setup({})
         lspconfig.marksman.setup({})
+        lspconfig.html.setup({})
+        lspconfig.cssls.setup({})
+        lspconfig.tsserver.setup({})
+        lspconfig.tailwindcss.setup({})
+
 
         local cmp = require("cmp")
         cmp.setup({

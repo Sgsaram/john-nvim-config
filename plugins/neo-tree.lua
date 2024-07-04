@@ -32,4 +32,5 @@ return {
             position = "float",
         },
 	},
+    config = true,
 }

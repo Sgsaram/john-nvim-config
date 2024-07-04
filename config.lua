@@ -14,3 +14,11 @@ vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
 
 vim.opt.smartcase = true
+
+vim.keymap.set("n", "<c-k>", "<cmd>:wincmd k<cr>", { silent = true })
+vim.keymap.set("n", "<c-j>", "<cmd>:wincmd j<cr>", { silent = true })
+vim.keymap.set("n", "<c-h>", "<cmd>:wincmd h<cr>", { silent = true })
+vim.keymap.set("n", "<c-l>", "<cmd>:wincmd l<cr>", { silent = true })
+
+vim.keymap.set("n", "<c-->", "<cmd>:split<cr>", { silent = true })
+vim.keymap.set("n", "<c-\\>", "<cmd>:vsplit<cr>", { silent = true })
