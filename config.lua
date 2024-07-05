@@ -20,5 +20,5 @@ vim.keymap.set("n", "<c-j>", "<cmd>:wincmd j<cr>", { silent = true })
 vim.keymap.set("n", "<c-h>", "<cmd>:wincmd h<cr>", { silent = true })
 vim.keymap.set("n", "<c-l>", "<cmd>:wincmd l<cr>", { silent = true })
 
-vim.keymap.set("n", "<c-->", "<cmd>:split<cr>", { silent = true })
-vim.keymap.set("n", "<c-\\>", "<cmd>:vsplit<cr>", { silent = true })
+vim.keymap.set("n", "<c-->", "<cmd>:split|wincmd j<cr>", { silent = true })
+vim.keymap.set("n", "<c-\\>", "<cmd>:vsplit|wincmd l<cr>", { silent = true })

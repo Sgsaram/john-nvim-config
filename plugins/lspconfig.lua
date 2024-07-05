@@ -82,10 +82,10 @@ return {
                 completion = cmp.config.window.bordered(),
                 documentation = cmp.config.window.bordered(),
             },
-            preselect = "item",
-            completion = {
-                completeopt = "menu,menuone,noinsert",
-            },
+            -- preselect = "item",
+            -- completion = {
+            --     completeopt = "menu,menuone,noinsert",
+            -- },
             sources = {
                 { name = "nvim_lsp" },
                 { name = "nvim_lua" },
@@ -94,7 +94,7 @@ return {
                 { name = "path" },
             },
             mapping = cmp.mapping.preset.insert({
-                ["<cr>"] = cmp.mapping.confirm({ select = false }),
+                ["<cr>"] = cmp.mapping.confirm({ select = true }),
                 ["<c-e>"] = cmp.mapping.abort(),
                 ["<c-k>"] = cmp.mapping.select_prev_item({behavior = "select"}),
                 ["<c-j>"] = cmp.mapping.select_next_item({behavior = "select"}),
