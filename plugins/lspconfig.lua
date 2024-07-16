@@ -14,6 +14,7 @@ return {
         "L3MON4D3/LuaSnip",
         "saadparwaiz1/cmp_luasnip",
     },
+    lazy = false,
     config = function()
 		local mason_lspconfig = require("mason-lspconfig")
 		require("mason").setup({})
