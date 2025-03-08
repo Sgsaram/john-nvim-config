@@ -96,7 +96,7 @@ return {
                 { name = "path" },
             },
             mapping = cmp.mapping.preset.insert({
-                ["<cr>"] = cmp.mapping.confirm({ select = true }),
+                ["<tab>"] = cmp.mapping.confirm({ select = true }),
                 ["<c-e>"] = cmp.mapping.abort(),
                 ["<c-k>"] = cmp.mapping.select_prev_item({behavior = "select"}),
                 ["<c-j>"] = cmp.mapping.select_next_item({behavior = "select"}),
