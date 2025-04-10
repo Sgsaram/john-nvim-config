@@ -22,3 +22,6 @@ vim.keymap.set("n", "<c-l>", "<cmd>:wincmd l<cr>", { silent = true })
 
 vim.keymap.set("n", "<c-->", "<cmd>:split|wincmd j<cr>", { silent = true })
 vim.keymap.set("n", "<c-\\>", "<cmd>:vsplit|wincmd l<cr>", { silent = true })
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

@@ -6,13 +6,14 @@ return {
 		"nvim-tree/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
     },
+    lazy = false,
 	keys = {
 		{ "<leader>pe", "<cmd>Neotree toggle<cr>", desc = "Toggle NeoTree" },
     },
 	opts = {
 		popup_border_style = "rounded",
 		filesystem = {
-			hijack_netrw_behavior = "open_current",
+            hijack_netrw_behavior = "open_default",
             filtered_items = {
                 visible = true,
                 hide_dotfiles = false,
