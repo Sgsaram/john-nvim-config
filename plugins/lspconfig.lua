@@ -26,7 +26,7 @@ return {
 				"marksman",
                 "html",
                 "cssls",
-                "tsserver",
+                "ts_ls",
                 "tailwindcss",
 			},
 		})
@@ -68,7 +68,7 @@ return {
         lspconfig.marksman.setup({})
         lspconfig.html.setup({})
         lspconfig.cssls.setup({})
-        lspconfig.tsserver.setup({})
+        lspconfig.ts_ls.setup({})
         lspconfig.tailwindcss.setup({})
 
 
