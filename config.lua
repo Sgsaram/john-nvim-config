@@ -25,3 +25,5 @@ vim.keymap.set("n", "<c-\\>", "<cmd>:vsplit|wincmd l<cr>", { silent = true })
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+vim.opt.showmode = false
