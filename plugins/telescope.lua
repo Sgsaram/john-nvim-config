@@ -21,7 +21,12 @@ return {
 				},
 			},
 		})
-		vim.keymap.set("n", "<leader>pf", builtin.find_files, {desc = "Telescope Find Files"})
+		vim.keymap.set("n", "<leader>pf",
+			function()
+				builtin.find_files({hidden = true, no_ignore = true})
+			end,
+			{desc = "Telescope Find Files"}
+		)
 		vim.keymap.set("n", "<leader>pw", builtin.live_grep, {desc = "Telescope Live Grep"})
         vim.keymap.set("n", "<leader>pt", "<cmd>TodoTelescope<cr>", {desc = "Telescope Find Todo"})
 	end,
