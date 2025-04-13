@@ -23,11 +23,24 @@ return {
 		})
 		vim.keymap.set("n", "<leader>pf",
 			function()
+                vim.cmd("Neotree close")
 				builtin.find_files({hidden = true, no_ignore = true})
 			end,
 			{desc = "Telescope Find Files"}
 		)
-		vim.keymap.set("n", "<leader>pw", builtin.live_grep, {desc = "Telescope Live Grep"})
-        vim.keymap.set("n", "<leader>pt", "<cmd>TodoTelescope<cr>", {desc = "Telescope Find Todo"})
+		vim.keymap.set("n", "<leader>pw",
+			function()
+                vim.cmd("Neotree close")
+                builtin.live_grep()
+			end,
+            {desc = "Telescope Live Grep"}
+        )
+        vim.keymap.set("n", "<leader>pt",
+			function()
+                vim.cmd("Neotree close")
+                vim.cmd("TodoTelescope")
+            end,
+            {desc = "Telescope Find Todo"}
+        )
 	end,
 }

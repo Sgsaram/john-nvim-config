@@ -13,7 +13,7 @@ return {
 	opts = {
 		popup_border_style = "rounded",
 		filesystem = {
-            hijack_netrw_behavior = "open_default",
+            hijack_netrw_behavior = "open_current",
             filtered_items = {
                 visible = true,
                 hide_dotfiles = false,
